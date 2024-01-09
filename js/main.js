@@ -29,6 +29,54 @@ $(document).ready(function(){
         }
 
 
+        //gnb li 위치에 따른 밑줄
+
+        if($(this).scrollTop() >= 0 &&  $(this).scrollTop() <  700)
+        {
+            $("#header .en_p1:nth-child(1)").addClass("on");
+        }
+        else
+        {
+            $("#header .en_p1:nth-child(1)").removeClass("on");
+
+        }
+        if($(this).scrollTop() >= 700 &&  $(this).scrollTop() <  1800)
+        {
+            $("#header .en_p1:nth-child(2)").addClass("on");
+        }
+        else
+        {
+            $("#header .en_p1:nth-child(2)").removeClass("on");
+
+        }
+        if($(this).scrollTop() >= 1800 &&  $(this).scrollTop() <  7138)
+        {
+            $("#header .en_p1:nth-child(3)").addClass("on");
+        }
+        else
+        {
+            $("#header .en_p1:nth-child(3)").removeClass("on");
+
+        }
+        if($(this).scrollTop() >= 1800 &&  $(this).scrollTop() <  7138)
+        {
+            $("#header2 .en_p1:nth-child(3)").addClass("on");
+        }
+        else
+        {
+            $("#header2 .en_p1:nth-child(3)").removeClass("on");
+
+        }
+        if($(this).scrollTop() >= 7138)
+        {
+            $("#header .en_p1:nth-child(4)").addClass("on");
+        }
+        else
+        {
+            $("#header .en_p1:nth-child(4)").removeClass("on");
+
+        }
+
 
  
 

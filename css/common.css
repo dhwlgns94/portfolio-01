@@ -8,7 +8,7 @@ body
 {
     position: fixed;
     right:10%;
-    bottom:0;
+    bottom:5%;
     z-index:-1;
 }
 .main_logo svg path
@@ -19,7 +19,6 @@ body
 {
     fill:#f7f8fa;
 }
-
 
 #header
 {
@@ -61,8 +60,32 @@ body
     justify-content: center;
     transition: all 0.2s;
     position:relative;
+    border-bottom: 3px solid rgba(255,255,255,0);
 }
 
+/* 스크롤 위치에 따른 li */
+#header .en_p1.on
+{
+    border-bottom:3px solid #333;
+    color:#000 !important;
+    box-sizing: content-box !important; 
+    transition: all 0s !important;
+}
+/* .gnb .en_p1
+{
+    position: relative;
+    display: inline-block;
+}
+.gnb .en_p1 span
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    
+} 
+*/
+/* 포지션으로 띄워올려도 움직이는게 똑같음 */
 
 #header .depth2
 {
@@ -113,13 +136,24 @@ body
 
 
 
-#header .gnb li:hover
+#header .gnb > li:hover
 {
-    background: #333;
-    color:#fff;
+    background: #333 !important;
+    color:#fff !important;
 }
 
 /* header */
+
+/* header 2 스크롤 위치에 따른 li */
+#header2 .en_p1.on
+{
+    border-bottom:3px solid #fff;
+    color:#000 !important;
+    box-sizing: content-box !important; 
+    transition:  all 0s !important;
+}
+
+
 
 #header2
 {
@@ -164,6 +198,7 @@ body
     justify-content: center;
     transition: all 0.2s;
     position:relative;
+    border-bottom:3px solid rgba(255,255,255,0);
 
 }
 #header2 .gnb li > span

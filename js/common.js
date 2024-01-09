@@ -19,9 +19,64 @@ $("#header2 .gnb li:nth-child(3)").mouseleave(function(){
 });
 
 $('.info_btn').click(function(){
-    var offset = $('#div1').offset(); 
+    // var offset = $('#div1').offset(); 
 
     $('html').animate({scrollTop : 5701}, 2000);
+
+});
+
+
+// header 클릭 시 해당 섹션 이동
+$('#header .gnb .en_p1:nth-child(1)').click(function(){
+    // var offset = $('#div1').offset(); 
+    // $(this).hide();
+    $('html').animate({scrollTop : 1}, 2000);
+
+});
+$('#header .gnb .en_p1:nth-child(2)').click(function(){
+    // var offset = $('#div1').offset(); 
+    // $(this).hide();
+    $('html').animate({scrollTop : 900}, 2000);
+
+});
+$('#header .gnb .en_p1:nth-child(3)').click(function(){
+    // var offset = $('#div1').offset(); 
+    // $(this).hide();
+    $('html').animate({scrollTop : 5705}, 2000);
+
+});
+$('#header .gnb .en_p1:nth-child(4)').click(function(){
+    // var offset = $('#div1').offset(); 
+    // $(this).hide();
+    $('html').animate({scrollTop : 7514}, 2000);
+
+});
+
+
+
+// header2 클릭 시 해당 섹션 이동
+$('#header2 .gnb .en_p1:nth-child(1)').click(function(){
+    // var offset = $('#div1').offset(); 
+    // $(this).hide();
+    $('html').animate({scrollTop : 1}, 2000);
+
+});
+$('#header2 .gnb .en_p1:nth-child(2)').click(function(){
+    // var offset = $('#div1').offset(); 
+    // $(this).hide();
+    $('html').animate({scrollTop : 900}, 2000);
+
+});
+$('#header2 .gnb .en_p1:nth-child(3)').click(function(){
+    // var offset = $('#div1').offset(); 
+    // $(this).hide();
+    $('html').animate({scrollTop : 5705}, 2000);
+
+});
+$('#header2 .gnb .en_p1:nth-child(4)').click(function(){
+    // var offset = $('#div1').offset(); 
+    // $(this).hide();
+    $('html').animate({scrollTop : 7514}, 2000);
 
 });
 
