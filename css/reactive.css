@@ -1,13 +1,24 @@
 @charset "utf-8";
 
+
+
 @media (max-width:520px)
 {
 
   /* section#01 */
   .main_logo svg
   {
-    width:100%
+    width:80%
   }
-  
+  .main_logo svg
+  {
+    position:fixed;
+    right:10%;
+    bottom:10%;
+  }
+  .intro_text
+  {
+    bottom:0;
+  }
 
 }
