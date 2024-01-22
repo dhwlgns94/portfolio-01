@@ -1,27 +1,261 @@
 @charset "utf-8";
 
 
+@media (max-width:1280px)
+/* mackbook air */
+  {
+  .main_logo {
+    height: 80%;
+    left: 50%;
+  }
 
-@media (max-width:520px)
+  #aboutme dl {
+    margin: 10px 0px;
+  }
+
+  #aboutme .en_h1 {
+    line-height: 1.2;
+  }
+
+  #aboutme .inner {
+    flex-direction: column-reverse;
+  }
+
+  .text_right_con {
+    display: flex;
+  }
+
+  #aboutme .text_right {
+    width: 100%;
+  }
+
+  #aboutme .text_left {
+    width: 100%;
+  }
+
+  .text_left_con {
+    display: flex;
+  }
+
+  .another_left,
+  .about_left {
+    width: 30%;
+  }
+
+}
+
+@media (max-width:1024px)
+/* i pad mini 가로형 */
+  {
+
+  .works_imgwrap > ul {
+    width: calc((100% /3) + 150px);
+  }
+
+}
+
+@media (max-width:768px)
+/* i pad mini */
+  {
+  #header .ham_btn_hover {
+    display: block;
+  }
+
+  #header2 .ham_btn_hover {
+    display: block;
+  }
+
+  #header .gnb {
+    display: none;
+  }
+
+  #header2 .gnb {
+    display: none;
+  }
+
+  .main_logo {
+    height: 60%;
+  }
+
+  .m_gnb_close_area,
+  .m_gnb_close_area_2 {
+    width: 70%;
+  }
+
+  .m_gnb_box,
+  .m_gnb_box_2 {
+    width: 30%;
+  }
+
+  .about_left {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .another_left,
+  .about_left {
+    width: 100%;
+  }
+
+  /* .about_left > dl:nth-child(1)
+  {
+    width: 30%;
+  } */
+
+  .text_right_con {
+    flex-direction: column;
+  }
+
+  .text_left {
+    padding-top: 5px;
+  }
+
+  .text_left_con {
+    flex-direction: column;
+  }
+
+  #aboutme dl {
+    margin: 3px 0px;
+  }
+
+  #wish h2 {
+    font-size: 9rem !important;
+  }
+
+  #wish p {
+    font-size: 13rem !important;
+  }
+
+  .works_imgwrap {
+    flex-wrap: wrap;
+    gap:0;
+  }
+
+  .works_imgwrap>ul {
+    width: calc((100% /2) + 150px);
+  }
+  .img_right
+  {
+    margin-top:100px;
+  }
+
+
+}
+
+@media (max-width:532px)
+/* PC 최소크기 반응형 */
+  {
+  .main_logo {
+    height: 40%;
+    left: 50%;
+  }
+
+  .m_gnb_close_area,
+  .m_gnb_close_area_2 {
+    width: 50%;
+  }
+
+  .m_gnb_box,
+  .m_gnb_box_2 {
+    width: 50%;
+  }
+
+  .br_520 {
+    display: block;
+  }
+}
+
+@media (max-width:414px)
+/* iphone 11 */
 {
+  #aboutme
+  {
+    height:200vh !important;
+  }
+  .text_right
+  {
+    height: 50%;
+    margin-bottom:50px;
+  }
+  .text_left
+  {
+    height: 50%;
+  }
 
-  /* section#01 */
-  .main_logo svg
+  .img_txt
   {
-    width:80%
+    top:40%;
   }
-  .main_logo svg
-  {
-    position:fixed;
-    right:10%;
-    bottom:10%;
+
+  .btn_box {
+    flex-direction: column;
+    justify-content: flex-end;
   }
-  .intro_text
+  .btn_box > p
   {
-    bottom:0;
+    width:100%;
   }
-  .en_h1
+  #wish h2
+  { 
+    font-size:4rem !important;
+    line-height: 1.2;
+  }
+  #wish p
+  { 
+    font-size:9rem !important;
+  }
+}
+
+
+
+@media (max-width:320px)
+/* iphone 5 */
+{
+  .main_logo
   {
-    font-size:4rem;
+    top:40%;
+    height:40%;
+  }
+  .m_gnb .depth2 span
+  {
+    padding:5px 0px;
+  }
+
+  .m_gnb_2 .depth2_2 span
+  {
+    padding:5px 0px;
+  }
+  #intro
+  {
+    padding-bottom:20px;
+  }
+  #header .ham
+  {
+    gap:5px;
+    width:30px;
+  }
+  #header
+  {
+    height:40px;
+  }
+  #header2 .ham
+  {
+    gap:5px;
+    width:30px;
+  }
+  #header2
+  {
+    height:40px;
+  }
+  .img_txt
+  {
+    top:40%;
+  }
+  #connection
+  {
+    padding-top:300vh;
+    padding-bottom:50px;
   }
 }
