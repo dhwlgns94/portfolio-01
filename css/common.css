@@ -225,8 +225,8 @@ body
 {
     width:80%;
     height:100%;
-    backdrop-filter: blur(10px);
-    background:rgba(0,0,0,0.1);
+    backdrop-filter: brightness(1.5) saturate(180%) blur(5px); 
+    /* background:rgba(0,0,0,0.7); */
 
 }
 .m_gnb_box
@@ -510,8 +510,8 @@ body
 {
     width:80%;
     height:100%;
-    backdrop-filter: blur(10px);
-    background:rgba(255,255,255,0.1);
+    backdrop-filter: brightness(1.5) saturate(180%) blur(5px); 
+    /* background:rgba(255,255,255,0.7); */
 
 }
 .m_gnb_box_2
