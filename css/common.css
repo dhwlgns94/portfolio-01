@@ -1,0 +1,618 @@
+@charset "utf-8";
+
+body
+{
+    position: relative;
+}
+.main_logo
+{
+    position: fixed;
+    top:50%;
+    left:60%;
+    transform: translate(-50%, -50%);
+    z-index:-1;
+}
+.main_logo svg
+{
+    height:100%;
+}
+.main_logo svg path
+{
+    transition:all 0.5s;
+}
+.main_logo svg path.on
+{
+    fill:#f7f8fa;
+}
+
+#header
+{
+    width: 100%;
+    z-index:3;
+    height:60px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    position:fixed;
+    top:0;
+    left:0;
+    backdrop-filter: blur(20px);
+}
+#header.on
+{
+    display:none;
+}
+
+#header .inner
+{
+    height:100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#header .gnb
+{
+    display: flex;
+    height:100%;
+
+}
+
+#header .gnb li
+{
+    padding:10px 60px;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    position:relative;
+    border-bottom: 3px solid rgba(255,255,255,0);
+}
+
+/* 스크롤 위치에 따른 li */
+#header .en_p1.on
+{
+    border-bottom:3px solid #333;
+    color:#000 !important;
+    box-sizing: content-box !important; 
+    transition: all 0s !important;
+}
+/* .gnb .en_p1
+{
+    position: relative;
+    display: inline-block;
+}
+.gnb .en_p1 span
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    
+} 
+*/
+/* 포지션으로 띄워올려도 움직이는게 똑같음 */
+
+#header .depth2
+{
+    width:100%;
+    position: absolute;
+    top:59px;
+    left:0;
+    background:#333;
+    text-align: center;
+    z-index: 3;
+    border:0 !important;
+    padding-bottom: 10px;
+}
+#header .depth2 li
+{
+    border:0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#header .depth2 span
+{
+    color:#fff;
+}
+
+#header .depth2 .en_p2:hover
+{
+    background:#fff;
+}
+#header .depth2 .en_p2:hover span
+{
+    color:#333;
+
+}
+
+#header .depth2 span
+{
+    white-space : nowrap;
+
+}
+
+#header .gnb li.on
+{
+    color:#f7f8fa;
+}
+
+
+
+#header .gnb > li:hover
+{
+    background: #333 !important;
+    color:#fff !important;
+}
+
+.ham_btn_hover
+{
+    height:100%;
+    /* display: none; */
+
+}
+.ham
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width:40px;
+    height:100%;
+    gap:10px;
+    cursor:pointer;
+
+}
+#header .ham_btn_hover li
+{
+    border-radius: 10px;
+    background:#333;
+    width:100%;
+    height:3px;
+}
+
+
+/* header */
+
+/* header1 -sitemap */
+
+.m_gnb_wrap
+{
+    display: flex;
+    height:100%;
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 4;
+    transition: all 1s;
+}
+
+
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+
+.m_gnb_wrap
+{
+    transform:translateX(100%);
+
+}
+
+ .m_gnb_wrap.on
+ {
+     transform:translateX(0%);
+ }
+ .m_gnb_wrap.off
+ {
+     transform:translateX(100%);
+ 
+ }
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+
+
+
+
+.m_gnb_close_area
+{
+    width:80%;
+    height:100%;
+    backdrop-filter: blur(10px);
+    background:rgba(0,0,0,0.1);
+
+}
+.m_gnb_box
+{
+    width:20%;
+    height:100%;
+    background: #fff;
+    padding-top:10%;
+    
+
+}
+.m_gnb
+{
+    width:100%;
+    text-align: center;
+}
+.m_gnb > li
+{
+    width:100%;
+    cursor:pointer;
+    transition: all 0.2s;
+    position:relative;
+}
+.m_gnb > li > span
+{
+    padding:20px 0px;
+    display: inline-block;
+}
+
+.m_gnb > li:hover
+{
+
+    background:#333;
+    color:#fff;
+}
+
+
+
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+
+.m_gnb .depth2
+{
+    display: none;
+}
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+
+.m_gnb .depth2
+{
+    background:rgba(0,0,0,0);
+    width: 100%;
+    padding-bottom:5px;
+}
+.m_gnb .depth2 a
+{
+    display: block;
+    transition: all 0.2s;
+    
+}
+.m_gnb .depth2 a:hover
+{
+    background:#fff;
+}
+.m_gnb .depth2 a:hover span
+{
+    color:#333;
+    opacity: 1;
+}
+
+.m_gnb .depth2 span
+{
+    color:#fff;
+    padding:10px 0px;
+    display:inline-block;
+    opacity: 0.6;
+}
+
+
+
+
+/* header1 -sitemap */
+
+
+/* header 2 스크롤 위치에 따른 li */
+#header2 .en_p1.on
+{
+    border-bottom:3px solid #fff;
+    color:#000 !important;
+    box-sizing: content-box !important; 
+    transition:  all 0s !important;
+}
+
+
+
+#header2
+{
+    width: 100%;
+    z-index:2;
+    height:60px;
+    position:fixed;
+    top:0;
+    left:0;
+    backdrop-filter: blur(40px);
+    background:rgba(0,0,0,0.5);
+    border-bottom:1px solid rgba(255,255,255,0.2);
+    display: none;
+
+
+}
+#header2.on
+{
+    display:block;
+}
+#header2 .inner
+{
+    height:100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#header2 .gnb
+{
+    display: flex;
+    height:100%;
+
+}
+
+#header2 .gnb > li
+{
+    padding:10px 60px;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    position:relative;
+    border-bottom:3px solid rgba(255,255,255,0);
+
+}
+#header2 .gnb li > span
+{
+    color:#fff;
+
+}
+#header2 .gnb li:hover
+{
+    background: #fff;
+}
+#header2 .gnb li:hover span
+{
+    color:#333;
+}
+
+
+#header2 .depth2
+{
+    
+    width:100%;
+    position: absolute;
+    top:59px;
+    left:0;
+    background:#fff;
+    text-align: center;
+    z-index: 3;
+    border:0 !important;
+    padding-bottom: 10px;
+}
+#header2 .depth2 li
+{
+    border:0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px 40px;
+
+
+}
+
+#header2 .depth2 span
+{
+    color:#fff;
+}
+
+#header2 .depth2 .en_p2:hover
+{
+    background:rgba(0,0,0,0.8);
+    backdrop-filter: blur(20px);
+}
+#header2 .depth2 .en_p2:hover span
+{
+    color:#fff;
+
+}
+
+#header2 .depth2 span
+{
+    white-space : nowrap;
+
+}
+
+#header2 .ham_btn_hover
+{
+    height:100%;
+    /* display: none; */
+
+}
+#header2 .ham
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width:40px;
+    height:100%;
+    gap:10px;
+    cursor:pointer;
+
+}
+#header2 .ham_btn_hover li
+{
+    border-radius: 10px;
+    background:#fff;
+    width:100%;
+    height:3px;
+}
+
+
+
+
+.m_gnb_wrap_2
+{
+    display: flex;
+    height:100%;
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 4;
+    transition: all 1s;
+}
+
+
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+
+.m_gnb_wrap_2
+{
+    transform:translateX(100%);
+
+}
+
+ .m_gnb_wrap_2.on
+ {
+     transform:translateX(0%);
+ }
+ .m_gnb_wrap_2.off
+ {
+     transform:translateX(100%);
+ 
+ }
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+
+
+
+
+.m_gnb_close_area_2
+{
+    width:80%;
+    height:100%;
+    backdrop-filter: blur(10px);
+    background:rgba(255,255,255,0.1);
+
+}
+.m_gnb_box_2
+{
+    width:20%;
+    height:100%;
+    background: #000;
+    padding-top:10%;
+    
+
+}
+.m_gnb_2
+{
+    width:100%;
+    text-align: center;
+}
+.m_gnb_2 > li
+{
+    width:100%;
+    cursor:pointer;
+    transition: all 0.2s;
+    position:relative;
+    color:#fff;
+}
+.m_gnb_2 > li > span
+{
+    padding:20px 0px;
+    display: inline-block;
+}
+
+.m_gnb_2 > li:hover
+{
+
+    background:#fff;
+    color:#000;
+}
+
+
+
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+
+.m_gnb_2 .depth2_2
+{
+    display: none;
+}
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+/* sitemap작업완료 후 주석해제 */
+
+.m_gnb_2 .depth2_2
+{
+    background:rgba(0,0,0,0);
+    width: 100%;
+    padding-bottom:5px;
+}
+.m_gnb_2 .depth2_2 a
+{
+    display: block;
+    transition: all 0.2s;
+    
+}
+.m_gnb_2 .depth2_2 a:hover
+{
+    background:#000;
+}
+.m_gnb_2 .depth2_2 a:hover span
+{
+    color:#fff;
+}
+
+.m_gnb_2 .depth2_2 span
+{
+    color:#000;
+    padding:10px 0px;
+    display:inline-block;
+}
+
+/* header2 */
+
+/* #header .gnb > li:last-child,
+#header2 .gnb > li:last-child
+
+{
+    display: none;
+} */
+
+
+/* 햄버튼 */
+#header .ham_btn_hover,
+#header2 .ham_btn_hover
+
+{
+    display: none;
+}
+
+.br_520
+{
+    display: none;
+}

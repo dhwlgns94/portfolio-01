@@ -1,0 +1,262 @@
+@charset "utf-8";
+
+body
+{
+    position: relative;
+}
+.main_logo
+{
+    position: fixed;
+    right:10%;
+    bottom:0;
+    z-index:-1;
+}
+.main_logo svg path
+{
+    transition:all 0.5s;
+}
+.main_logo svg path.on
+{
+    fill:#f7f8fa;
+}
+
+
+#header
+{
+    width: 100%;
+    z-index:3;
+    height:80px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    position:fixed;
+    top:0;
+    left:0;
+    backdrop-filter: blur(20px);
+}
+#header.on
+{
+    display:none;
+}
+
+#header .inner
+{
+    height:100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#header .gnb
+{
+    display: flex;
+    height:100%;
+
+}
+
+#header .gnb li
+{
+    padding:10px 40px;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    position:relative;
+    border-bottom: 3px solid rgba(255,255,255,0);
+}
+
+/* 스크롤 위치에 따른 li */
+#header .en_p1.on
+{
+    border-bottom:3px solid #333;
+    color:#000 !important;
+    box-sizing: content-box !important; 
+    transition: all 0s !important;
+}
+/* .gnb .en_p1
+{
+    position: relative;
+    display: inline-block;
+}
+.gnb .en_p1 span
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    
+} 
+*/
+/* 포지션으로 띄워올려도 움직이는게 똑같음 */
+
+#header .depth2
+{
+    width:100%;
+    position: absolute;
+    top:79px;
+    left:0;
+    background:#333;
+    text-align: center;
+    z-index: 3;
+    border:0 !important;
+    padding-bottom: 10px;
+}
+#header .depth2 li
+{
+    border:0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#header .depth2 span
+{
+    color:#fff;
+}
+
+#header .depth2 .en_p2:hover
+{
+    background:#fff;
+}
+#header .depth2 .en_p2:hover span
+{
+    color:#333;
+
+}
+
+#header .depth2 span
+{
+    white-space : nowrap;
+
+}
+
+#header .gnb li.on
+{
+    color:#f7f8fa;
+}
+
+
+
+#header .gnb > li:hover
+{
+    background: #333 !important;
+    color:#fff !important;
+}
+
+/* header */
+
+/* header 2 스크롤 위치에 따른 li */
+#header2 .en_p1.on
+{
+    border-bottom:3px solid #fff;
+    color:#000 !important;
+    box-sizing: content-box !important; 
+    transition:  all 0s !important;
+}
+
+
+
+#header2
+{
+    width: 100%;
+    z-index:2;
+    height:80px;
+    position:fixed;
+    top:0;
+    left:0;
+    backdrop-filter: blur(40px);
+    background:rgba(0,0,0,0.5);
+    border-bottom:1px solid rgba(255,255,255,0.2);
+    display: none;
+
+
+}
+#header2.on
+{
+    display:block;
+}
+#header2 .inner
+{
+    height:100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#header2 .gnb
+{
+    display: flex;
+    height:100%;
+
+}
+
+#header2 .gnb li
+{
+    padding:10px 40px;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    position:relative;
+    border-bottom:3px solid rgba(255,255,255,0);
+
+}
+#header2 .gnb li > span
+{
+    color:#fff;
+
+}
+#header2 .gnb li:hover
+{
+    background: #fff;
+}
+#header2 .gnb li:hover span
+{
+    color:#333;
+}
+
+
+#header2 .depth2
+{
+    width:100%;
+    position: absolute;
+    top:79px;
+    left:0;
+    background:#fff;
+    text-align: center;
+    z-index: 3;
+    border:0 !important;
+    padding-bottom: 10px;
+}
+#header2 .depth2 li
+{
+    border:0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#header2 .depth2 span
+{
+    color:#fff;
+}
+
+#header2 .depth2 .en_p2:hover
+{
+    background:rgba(0,0,0,0.8);
+    backdrop-filter: blur(20px);
+}
+#header2 .depth2 .en_p2:hover span
+{
+    color:#fff;
+
+}
+
+#header2 .depth2 span
+{
+    white-space : nowrap;
+
+}
+/* header2 */
