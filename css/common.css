@@ -34,7 +34,8 @@ body
     position:fixed;
     top:0;
     left:0;
-    backdrop-filter: blur(20px);
+    backdrop-filter: brightness(1.5) saturate(180%) blur(5px); 
+    background:rgba(255,255,255,0.7);
 }
 #header.on
 {
@@ -335,8 +336,8 @@ body
     position:fixed;
     top:0;
     left:0;
-    backdrop-filter: blur(40px);
-    background:rgba(0,0,0,0.5);
+    backdrop-filter: brightness(1.5) saturate(180%) blur(5px); 
+    background:rgba(0,0,0,0.7);
     border-bottom:1px solid rgba(255,255,255,0.2);
     display: none;
 
