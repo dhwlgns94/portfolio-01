@@ -229,13 +229,13 @@ $(document).ready(function () {
 
         }
 
-        if (window.innerWidth <= 532) {
+        if (window.innerWidth <= 520) {
 
 
 
             $(window).scroll(function () {
 
-                if ($(this).scrollTop() > 4500 && $(this).scrollTop() <= 8003) {
+                if ($(this).scrollTop() > 4500 && $(this).scrollTop() <= 7800) {
                     $("body").addClass("on");
                     $("#works h3").addClass("on");
                     $("#header").addClass("on");
