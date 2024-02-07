@@ -261,12 +261,14 @@ body
     display: inline-block;
 }
 
+
 .m_gnb > li:hover
 {
 
     background:#333;
     color:#fff;
 }
+
 
 
 
@@ -599,6 +601,8 @@ body
     padding:10px 0px;
     display:inline-block;
 }
+
+
 
 /* header2 */
 
