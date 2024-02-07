@@ -144,7 +144,7 @@
 
 }
 
-@media (max-width:532px)
+@media (max-width:520px)
 /* PC 최소크기 반응형 */
   {
   .main_logo {
@@ -169,7 +169,8 @@
   {
     font-size:2.4rem;
   }
-  .gyoha_logo
+  .gyoha_logo,
+  .young_logo
   {
     width: 60%;
   }
