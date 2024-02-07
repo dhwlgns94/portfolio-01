@@ -5,8 +5,7 @@
 /* mackbook air */
   {
   .main_logo {
-    height: 80%;
-    left: 50%;
+    width: 60%;
   }
 
   #aboutme dl {
@@ -57,6 +56,11 @@
 @media (max-width:825px)
 /* i pad mini */
   {
+
+    .main_logo {
+      width: 80%;
+    }
+
   #header .ham_btn_hover {
     display: block;
   }
@@ -71,10 +75,6 @@
 
   #header2 .gnb {
     display: none;
-  }
-
-  .main_logo {
-    height: 60%;
   }
 
   .m_gnb_close_area,
@@ -147,11 +147,6 @@
 @media (max-width:520px)
 /* PC 최소크기 반응형 */
   {
-  .main_logo {
-    height: 40%;
-    left: 50%;
-  }
-
   .m_gnb_close_area,
   .m_gnb_close_area_2 {
     width: 50%;
@@ -222,11 +217,7 @@
 @media (max-width:320px)
 /* iphone 5 */
 {
-  .main_logo
-  {
-    top:40%;
-    height:40%;
-  }
+
   .m_gnb .depth2 span
   {
     padding:5px 0px;
