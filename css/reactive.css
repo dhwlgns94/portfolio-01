@@ -5,7 +5,7 @@
 /* mackbook air */
   {
   .main_logo {
-    width: 60%;
+    width: 60vw;
   }
 
   #aboutme dl {
@@ -58,7 +58,7 @@
   {
 
     .main_logo {
-      width: 80%;
+      width: 80vw;
     }
 
   #header .ham_btn_hover {
