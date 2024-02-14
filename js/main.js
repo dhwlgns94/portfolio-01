@@ -173,7 +173,8 @@ $(document).ready(function () {
     // 반응형선언(최우선 선언되어야함)
     $(window).resize(function () {
 
-        if (window.innerWidth <= 1280) {
+
+        if (window.innerWidth <= 1550) {
             // 반응형맥북
 
 
