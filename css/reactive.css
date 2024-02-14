@@ -1,11 +1,11 @@
 @charset "utf-8";
 
 
-@media (max-width:1280px)
+@media (max-width:1550px)
 /* mackbook air */
   {
   .main_logo {
-    width: 60vw;
+    width: 50vw;
   }
 
   #aboutme dl {
@@ -41,6 +41,14 @@
     width: 30%;
   }
 
+}
+
+@media (max-width:1280px)
+/* mackbook air */
+  {
+  .main_logo {
+    width: 60vw;
+  }
 }
 
 @media (max-width:1024px)
